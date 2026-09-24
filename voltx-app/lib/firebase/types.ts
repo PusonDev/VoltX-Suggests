@@ -1,4 +1,4 @@
-/* ─── VoltX Design Tokens — Supabase DB Types ─── */
+/* ─── Zenvq Suggests Design Tokens & Entity Types ─── */
 
 export type AffiliateStatus =
   | "pending-verification"

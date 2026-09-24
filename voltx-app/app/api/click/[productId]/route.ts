@@ -19,18 +19,19 @@ export async function POST(
       request.headers.get("x-real-ip") ||
       "unknown";
 
-    // In production, this would insert into affiliate_clicks table:
-    // INSERT INTO affiliate_clicks (product_id, session_id, locale, page_slug, placement)
-    // VALUES ($1, $2, $3, $4, $5)
-
-    console.log("[Click Log]", {
-      productId,
-      sessionId: sessionId.substring(0, 8) + "...",
-      locale,
-      page_slug,
-      placement,
-      timestamp: new Date().toISOString(),
-    });
+    // Save click into Firebase Firestore
+    try {
+      const { logFirestoreClick } = await import("@/lib/firebase/service");
+      await logFirestoreClick({
+        product_id: productId,
+        session_id: sessionId,
+        locale,
+        page_slug,
+        placement,
+      });
+    } catch (fbErr) {
+      console.error("[Firestore Click Error]", fbErr);
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {

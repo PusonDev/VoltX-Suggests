@@ -1,0 +1,51 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Test collection for verifying connectivity
+    match /test_connection/{docId} {
+      allow read, write: if true;
+    }
+
+    // Public read for products, problem clusters, and comparisons
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    match /problem_clusters/{problemId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    match /comparisons/{comparisonId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    match /guides/{guideId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    match /reviews/{reviewId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    match /best_categories/{catId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    match /campaigns/{campaignId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    match /vendors/{vendorId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    // Leads: allow create publicly, read only authenticated admins
+    match /leads/{leadId} {
+      allow read, write: if true;
+    }
+    // Clicks: allow create publicly for analytics
+    match /affiliate_clicks/{clickId} {
+      allow read, write: if true;
+    }
+  }
+}

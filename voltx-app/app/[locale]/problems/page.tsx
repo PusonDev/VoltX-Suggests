@@ -5,7 +5,7 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Card from "@/components/ui/Card";
 import ScrollReveal from "@/components/shared/ScrollReveal";
-import { getProblems } from "@/lib/supabase/seed";
+import { getProblems } from "@/lib/firebase/seed";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -14,7 +14,7 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "problems" });
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   return {
     title: t("title"),

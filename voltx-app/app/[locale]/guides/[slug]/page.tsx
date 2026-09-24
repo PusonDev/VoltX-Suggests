@@ -5,7 +5,7 @@ import Container from "@/components/ui/Container";
 import Badge from "@/components/ui/Badge";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import TranslationPending from "@/components/shared/TranslationPending";
-import { getGuides, getGuideBySlug } from "@/lib/supabase/seed";
+import { getGuides, getGuideBySlug } from "@/lib/firebase/seed";
 import { breadcrumbSchema } from "@/lib/structured-data";
 
 interface PageProps {
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const guide = getGuideBySlug(slug);
   if (!guide) return {};
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   return {
     title: guide.title,
@@ -45,7 +45,7 @@ export default async function GuidePage({ params }: { params: Promise<{ locale: 
   const tc = await getTranslations({ locale, namespace: "common" });
   const tn = await getTranslations({ locale, namespace: "nav" });
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   const breadcrumbs = breadcrumbSchema([
     { name: tc("home"), url: `${siteUrl}/${locale}` },

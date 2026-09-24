@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "voltx-suggests",
+    "suggests": "voltx-suggests",
+    "agency": "voltx-agency"
+  }
+}

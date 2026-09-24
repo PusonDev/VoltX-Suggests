@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 /**
  * POST /api/translate — Webhook endpoint for auto-translation pipeline
  * 
- * Triggered by Supabase when new English content is inserted/updated.
+ * Triggered by Firestore or background events when new English content is inserted/updated.
  * Creates a DRAFT Arabic translation (needs_review: true, published: false).
  * 
  * In production: wire this to Google Cloud Translation API or DeepL.

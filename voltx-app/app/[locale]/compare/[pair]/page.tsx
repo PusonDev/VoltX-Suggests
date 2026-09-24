@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import Container from "@/components/ui/Container";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import ProductCard from "@/components/shared/ProductCard";
-import { getComparisons, getComparisonBySlug, getProducts } from "@/lib/supabase/seed";
-import type { Product } from "@/lib/supabase/types";
+import { getComparisons, getComparisonBySlug, getProducts } from "@/lib/firebase/seed";
+import type { Product } from "@/lib/firebase/types";
 import { breadcrumbSchema } from "@/lib/structured-data";
 
 interface PageProps {
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const p1 = localizedProducts.find((p: Product) => p.id === comparison.product1_id);
   const p2 = localizedProducts.find((p: Product) => p.id === comparison.product2_id);
   const title = `${p1?.name || "Product"} vs ${p2?.name || "Product"} — Full Comparison`;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   return {
     title,
@@ -55,7 +55,7 @@ export default async function ComparePage({ params }: { params: Promise<{ locale
   if (!product1 || !product2) notFound();
 
   const winner = comparison.winner_id ? localizedProducts.find((p: Product) => p.id === comparison.winner_id) : null;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   const breadcrumbs = breadcrumbSchema([
     { name: tc("home"), url: `${siteUrl}/${locale}` },

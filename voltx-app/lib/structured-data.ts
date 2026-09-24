@@ -1,4 +1,4 @@
-import type { Product, Review as ReviewType } from "@/lib/supabase/types";
+import type { Product, Review as ReviewType } from "@/lib/firebase/types";
 
 /**
  * Generate JSON-LD structured data for a Product
@@ -48,7 +48,7 @@ export function reviewSchema(
     },
     author: {
       "@type": "Organization",
-      name: "VoltX",
+      name: "Zenvq Suggests",
     },
     datePublished: review.created_at,
     dateModified: review.updated_at,

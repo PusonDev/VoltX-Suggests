@@ -32,13 +32,13 @@ export default function Navbar() {
           >
             <Image
               src="/logo.png"
-              alt="VoltX Logo"
+              alt="Zenvq Suggests Logo"
               width={34}
               height={34}
               className="w-8.5 h-8.5 rounded-lg object-cover shadow-sm transition-transform duration-200 group-hover:scale-105"
               priority
             />
-            <span>Volt<span className="text-primary">X</span></span>
+            <span>Zenvq <span className="text-primary">Suggests</span></span>
           </Link>
 
           {/* Desktop nav */}

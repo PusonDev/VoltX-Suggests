@@ -29,7 +29,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const dir = localeDirection[locale as Locale];
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   return (
     <html lang={locale} dir={dir} className={GeistSans.className} data-theme="purple" suppressHydrationWarning>

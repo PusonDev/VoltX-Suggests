@@ -6,7 +6,7 @@ import Container from "@/components/ui/Container";
 import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
 import ScrollReveal from "@/components/shared/ScrollReveal";
-import { getGuides, getReviews, getProblems, getComparisons, getBestCategories } from "@/lib/supabase/seed";
+import { getGuides, getReviews, getProblems, getComparisons, getBestCategories } from "@/lib/firebase/seed";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -15,7 +15,7 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "hub" });
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   return {
     title: t("title"),

@@ -5,7 +5,7 @@ import Container from "@/components/ui/Container";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import Button from "@/components/ui/Button";
 import EmailGate from "@/components/gate/EmailGate";
-import type { Campaign } from "@/lib/supabase/types";
+import type { Campaign } from "@/lib/firebase/types";
 
 interface CampaignContentProps {
   campaign: Campaign;

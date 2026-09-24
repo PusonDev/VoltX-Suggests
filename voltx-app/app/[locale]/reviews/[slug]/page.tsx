@@ -6,7 +6,7 @@ import Badge from "@/components/ui/Badge";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import ProductCard from "@/components/shared/ProductCard";
 import TranslationPending from "@/components/shared/TranslationPending";
-import { getReviews, getReviewBySlug, getProductBySlug } from "@/lib/supabase/seed";
+import { getReviews, getReviewBySlug, getProductBySlug } from "@/lib/firebase/seed";
 import { reviewSchema, breadcrumbSchema } from "@/lib/structured-data";
 
 interface PageProps {
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const review = getReviewBySlug(slug);
   if (!review) return {};
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   return {
     title: review.title,
@@ -53,7 +53,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ locale:
     locale
   );
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   const structuredData = product ? reviewSchema(review, product, `${siteUrl}/${locale}/reviews/${review.slug}`) : null;
   const breadcrumbs = breadcrumbSchema([

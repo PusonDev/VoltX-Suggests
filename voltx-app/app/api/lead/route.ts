@@ -41,23 +41,29 @@ export async function POST(request: NextRequest) {
 
     const cleanEmail = email.trim().toLowerCase();
 
-    // Generate a unique lead ID (in production, this would be from Supabase)
+    // Generate a unique lead ID and cookie token
     const leadId = crypto.randomUUID();
     const cookieToken = await signCookie(leadId);
 
-    // In production, this would:
-    // 1. Check if email exists in `leads` table
-    //    - If yes: get existing lead_id, don't create duplicate
-    //    - If no: insert new lead row
-    // 2. Insert topic-touch row in `lead_topic_touches`
-    // 3. Issue/re-issue cookie
+    // Save lead into Firebase Firestore
+    try {
+      const { createFirestoreLead } = await import("@/lib/firebase/service");
+      await createFirestoreLead({
+        email: cleanEmail,
+        marketing_consent: Boolean(marketing_consent),
+        topic_slug,
+        page_type,
+        source,
+        cookie_token: cookieToken,
+      });
+    } catch (fbErr) {
+      console.error("[Firestore Lead Error]", fbErr);
+    }
 
-    // For now (mock), just issue the cookie
     const response = NextResponse.json(
       {
         success: true,
         message: "Lead captured",
-        // Never return internal data like lead_id to client
       },
       { status: 200 }
     );

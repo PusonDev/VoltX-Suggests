@@ -1,6 +1,7 @@
-# ⚡ VoltX — Problem-First Cybersecurity Advisor
+# ⚡ Zenvq Suggests — Problem-First Cybersecurity Advisor
 
-VoltX is a problem-solving cybersecurity and privacy advisor platform designed for small businesses and teams. Rather than serving as a generic affiliate directory, VoltX diagnoses specific security pain points and recommends tailored solutions based on fit and editorial merit.
+Zenvq Suggests is a problem-solving cybersecurity and privacy advisor platform designed for small businesses and teams. Rather than serving as a generic affiliate directory, Zenvq Suggests diagnoses specific security pain points and recommends tailored solutions based on fit and editorial merit.
+Live Domain: [suggests.zenvq.com](https://suggests.zenvq.com)
 
 ---
 

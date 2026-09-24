@@ -6,7 +6,7 @@ import Container from "@/components/ui/Container";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import ProductCard from "@/components/shared/ProductCard";
 import TranslationPending from "@/components/shared/TranslationPending";
-import { getProblems, getProblemBySlug, getProductsForProblem } from "@/lib/supabase/seed";
+import { getProblems, getProblemBySlug, getProductsForProblem } from "@/lib/firebase/seed";
 import { breadcrumbSchema } from "@/lib/structured-data";
 
 interface PageProps {
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const problem = getProblemBySlug(slug);
   if (!problem) return {};
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   return {
     title: problem.title,
@@ -46,7 +46,7 @@ export default async function ProblemPage({ params }: { params: Promise<{ locale
 
   const tc = await getTranslations({ locale, namespace: "common" });
   const fittedProducts = getProductsForProblem(problem.id, locale);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   const breadcrumbs = breadcrumbSchema([
     { name: tc("home"), url: `${siteUrl}/${locale}` },

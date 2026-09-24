@@ -10,7 +10,7 @@ import ScrollReveal from "@/components/shared/ScrollReveal";
 import VisualHero from "@/components/home/VisualHero";
 import LiveThreatSimulator from "@/components/home/LiveThreatSimulator";
 import ProductCard from "@/components/shared/ProductCard";
-import { getProblems, getProducts } from "@/lib/supabase/seed";
+import { getProblems, getProducts } from "@/lib/firebase/seed";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -19,7 +19,7 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
 
   return {
     title: `${t("siteName")} — ${t("tagline")}`,
@@ -135,7 +135,7 @@ export default function HomePage() {
                 <div className="relative rounded-2xl overflow-hidden border border-border shadow-2xl glow-border">
                   <Image
                     src="/threat-radar.jpg"
-                    alt="VoltX Threat Radar Matrix"
+                    alt="Zenvq Suggests Threat Radar Matrix"
                     width={640}
                     height={480}
                     className="w-full h-auto object-cover"

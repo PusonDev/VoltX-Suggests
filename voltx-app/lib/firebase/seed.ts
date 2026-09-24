@@ -303,7 +303,7 @@ export const seedProblems: ProblemCluster[] = [
     short_description:
       "You know security matters but the options are overwhelming. You need a clear, prioritized starting point.",
     long_description:
-      "Many small business owners know they should be doing something about cybersecurity but feel paralyzed by the sheer number of options and technical jargon. This is actually the most common starting point for VoltX users. Instead of overwhelming you with a dozen tools, we identify the 2-3 most impactful steps you can take today based on your specific business profile, industry, and risk factors.",
+      "Many small business owners know they should be doing something about cybersecurity but feel paralyzed by the sheer number of options and technical jargon. This is actually the most common starting point for Zenvq Suggests users. Instead of overwhelming you with a dozen tools, we identify the 2-3 most impactful steps you can take today based on your specific business profile, industry, and risk factors.",
     urgency_score: 6,
     buyer_intent_score: 10,
     evergreen_score: 10,
@@ -551,7 +551,7 @@ export const arabicProblems: Record<string, Partial<ProblemCluster>> = {
   "no-idea-where-to-start": {
     title: "مبتدئ تمامًا — لا تعرف من أين تبدأ بالأمان؟",
     short_description: "أنت تعلم أن الأمان مهم لكن الخيارات كثيرة ومربكة. أنت بحاجة إلى نقطة بداية واضحة ومحددة.",
-    long_description: "يعلم العديد من أصحاب الأعمال الصغيرة أنه ينبغي عليهم فعل شيء ما بشأن الأمن السيبراني ولكنهم يشعرون بالحيرة من كثرة الخيارات والمصطلحات التقنية. هذه هي نقطة البداية الأكثر شيوعًا لمستخدمي فولت إكس. بدلاً من إرباكك بعشرات الأدوات، نحدد الخطوتين أو الثلاث خطوات الأكثر تأثيرًا التي يمكنك اتخاذها اليوم.",
+    long_description: "يعلم العديد من أصحاب الأعمال الصغيرة أنه ينبغي عليهم فعل شيء ما بشأن الأمن السيبراني ولكنهم يشعرون بالحيرة من كثرة الخيارات والمصطلحات التقنية. هذه هي نقطة البداية الأكثر شيوعًا لمستخدمي زينفك سجستس. بدلاً من إرباكك بعشرات الأدوات، نحدد الخطوتين أو الثلاث خطوات الأكثر تأثيرًا التي يمكنك اتخاذها اليوم.",
   },
 };
 

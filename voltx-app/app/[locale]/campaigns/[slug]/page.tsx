@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getCampaigns, getCampaignBySlug } from "@/lib/supabase/seed";
+import { getCampaigns, getCampaignBySlug } from "@/lib/firebase/seed";
 import CampaignContent from "@/components/campaigns/CampaignContent";
 
 interface PageProps {

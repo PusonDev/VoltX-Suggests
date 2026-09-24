@@ -6,7 +6,7 @@ import Container from "@/components/ui/Container";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import ProductCard from "@/components/shared/ProductCard";
 import EmailGate from "@/components/gate/EmailGate";
-import { getProducts } from "@/lib/supabase/seed";
+import { getProducts } from "@/lib/firebase/seed";
 
 export default function DiagnosticResultPage() {
   const t = useTranslations("diagnostic");

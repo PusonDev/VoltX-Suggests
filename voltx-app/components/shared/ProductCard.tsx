@@ -5,7 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
 import { resolveMerchantUrl } from "@/lib/affiliate";
-import type { Product } from "@/lib/supabase/types";
+import type { Product } from "@/lib/firebase/types";
 
 interface ProductCardProps {
   product: Product;

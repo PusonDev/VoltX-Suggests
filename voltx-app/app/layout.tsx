@@ -4,8 +4,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "VoltX — Cybersecurity Advisor for Small Business",
-    template: "%s | VoltX",
+    default: "Zenvq Suggests — Cybersecurity Advisor for Small Business",
+    template: "%s | Zenvq Suggests",
   },
   description:
     "Problem-first cybersecurity & privacy advisor for small businesses. Get fitted security recommendations — not generic product lists.",

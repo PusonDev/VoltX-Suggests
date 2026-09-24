@@ -5,7 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import Container from "@/components/ui/Container";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import ProductCard from "@/components/shared/ProductCard";
-import { getProducts, getProblems, seedProductProblemFits } from "@/lib/supabase/seed";
+import { getProducts, getProblems, seedProductProblemFits } from "@/lib/firebase/seed";
 
 export default function ToolsPage() {
   const t = useTranslations("tools");

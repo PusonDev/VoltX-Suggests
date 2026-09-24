@@ -1,6 +1,6 @@
 {
   "meta": {
-    "siteName": "VoltX",
+    "siteName": "Zenvq Suggests",
     "tagline": "Your Cybersecurity Advisor",
     "description": "Problem-first cybersecurity & privacy advisor for small businesses. Find the right security tools fitted to your needs."
   },
@@ -58,7 +58,7 @@
     "viewProduct": "View product",
     "exploreProblems": "Explore Challenges",
     "whyTrustUs": "Why trust us?",
-    "copyright": "© {year} VoltX. All rights reserved.",
+    "copyright": "© {year} Zenvq Suggests. All rights reserved.",
     "recommendedSolutions": "Recommended Solutions",
     "recommendedSolutionsSubtitle": "Products ranked by fit score for this specific challenge — not by commission.",
     "finalizingRecommendation": "We're finalizing our recommendation for this challenge",
@@ -88,7 +88,7 @@
     "heroSecondary": "Browse All Tools",
     "problemsTitle": "What challenge are you facing?",
     "problemsSubtitle": "Click on the problem that resonates with your situation — we'll show you what actually solves it.",
-    "howItWorksTitle": "How VoltX Works",
+    "howItWorksTitle": "How Zenvq Suggests Works",
     "howItWorksSubtitle": "Three steps to the right cybersecurity stack for your business.",
     "step1Title": "Describe your situation",
     "step1Desc": "Answer a quick diagnostic about your team size, industry, current tools, and security concerns.",
@@ -205,10 +205,10 @@
     "viewFullReview": "View full review"
   },
   "about": {
-    "title": "About VoltX",
+    "title": "About Zenvq Suggests",
     "subtitle": "We're building the cybersecurity advisor small businesses deserve.",
     "missionTitle": "Our Mission",
-    "missionDesc": "Small businesses face the same cyber threats as enterprises but don't have the budget for a dedicated security team. VoltX bridges that gap with honest, problem-first recommendations that fit your actual situation — not your wallet size.",
+    "missionDesc": "Small businesses face the same cyber threats as enterprises but don't have the budget for a dedicated security team. Zenvq Suggests bridges that gap with honest, problem-first recommendations that fit your actual situation — not your wallet size.",
     "howWeReview": "How We Review Products",
     "howWeReviewDesc": "Every product goes through independent editorial evaluation. We score on real-world effectiveness, ease of setup, value for money, and support quality. Commission never affects our rankings.",
     "transparencyTitle": "Our Transparency Promise",
@@ -231,19 +231,19 @@
     "s5Title": "Your Rights",
     "s5Desc": "You can request deletion of your data at any time by contacting us. You can unsubscribe from marketing emails using the link in any email we send. You can clear your browser cookies to remove your session.",
     "s6Title": "Contact",
-    "s6Desc": "For privacy-related inquiries, please contact us at privacy@voltx.com."
+    "s6Desc": "For privacy-related inquiries, please contact us at privacy@zenvq.com."
   },
   "terms": {
     "title": "Terms of Service",
     "lastUpdated": "Last updated: August 2026",
     "s1Title": "Acceptance of Terms",
-    "s1Desc": "By accessing and using VoltX, you agree to these terms of service. If you do not agree, please do not use the site.",
+    "s1Desc": "By accessing and using Zenvq Suggests, you agree to these terms of service. If you do not agree, please do not use the site.",
     "s2Title": "Our Service",
-    "s2Desc": "VoltX provides cybersecurity product recommendations and educational content for small businesses. Our recommendations are based on editorial evaluation and are intended as guidance, not professional security consulting.",
+    "s2Desc": "Zenvq Suggests provides cybersecurity product recommendations and educational content for small businesses. Our recommendations are based on editorial evaluation and are intended as guidance, not professional security consulting.",
     "s3Title": "Affiliate Disclosure",
-    "s3Desc": "VoltX earns revenue through affiliate commissions when you purchase products through our links. We clearly label affiliate links. Commission never influences our editorial rankings — products are ranked solely by fit score and editorial evaluation.",
+    "s3Desc": "Zenvq Suggests earns revenue through affiliate commissions when you purchase products through our links. We clearly label affiliate links. Commission never influences our editorial rankings — products are ranked solely by fit score and editorial evaluation.",
     "s4Title": "Limitation of Liability",
-    "s4Desc": "VoltX provides recommendations in good faith but does not guarantee the security of any product or combination of products. We are not liable for any damages resulting from your use of recommended products.",
+    "s4Desc": "Zenvq Suggests provides recommendations in good faith but does not guarantee the security of any product or combination of products. We are not liable for any damages resulting from your use of recommended products.",
     "s5Title": "Changes to Terms",
     "s5Desc": "We may update these terms from time to time. Continued use of the site constitutes acceptance of updated terms."
   },

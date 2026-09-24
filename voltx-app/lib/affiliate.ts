@@ -1,4 +1,4 @@
-import type { Product } from "./supabase/types";
+import type { Product } from "./firebase/types";
 
 /**
  * Single resolver for merchant URLs.

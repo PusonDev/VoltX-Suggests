@@ -97,7 +97,7 @@ export default function VisualHero() {
                 <div className="relative rounded-2xl overflow-hidden border border-primary/30 shadow-2xl shadow-primary/20 glow-border group">
                   <Image
                     src="/hero-cyber-shield.jpg"
-                    alt="VoltX Cyber Defense Command"
+                    alt="Zenvq Suggests Cyber Defense Command"
                     width={720}
                     height={405}
                     className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"

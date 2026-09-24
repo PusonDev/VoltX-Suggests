@@ -6,10 +6,10 @@ import {
   getReviews,
   getComparisons,
   getBestCategories,
-} from "@/lib/supabase/seed";
+} from "@/lib/firebase/seed";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://voltx.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://suggests.zenvq.com";
   const entries: MetadataRoute.Sitemap = [];
 
   // Static pages per locale
